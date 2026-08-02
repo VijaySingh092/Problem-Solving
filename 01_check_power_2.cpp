@@ -4,7 +4,7 @@
 using namespace std;
 
 bool isPowerOfTwo(int n){
-    if(n>0 && (n&(n-1))==0){
+    if(n>0 && (n&(n-1))==0){     // bitwise & operation between n and (n-1) will always give 0 if n is a power of 2 and n is greater than 0
         return true;
     }
     else return false;
